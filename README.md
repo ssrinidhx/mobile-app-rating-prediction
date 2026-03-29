@@ -60,7 +60,23 @@ The following preprocessing steps were applied:
 * Encoding categorical variables using **Label Encoding**
 * Reordering dataset to keep the **target variable (Rating) at the end**
 
-These steps ensured the dataset was suitable for machine learning.
+### Cleaned Dataset
+
+After completing the preprocessing steps, the cleaned dataset was saved as a separate file for reuse and reproducibility.
+
+The cleaned dataset includes:
+- Missing values handled
+- Numeric columns cleaned and converted to proper formats
+- Categorical variables encoded
+- Consistent data types for machine learning
+
+The cleaned dataset is stored in the repository at:
+
+```
+data/cleaned_googleplaystoredataset.csv
+```
+
+This allows the machine learning models to be trained directly on the processed data without repeating the preprocessing steps.
 
 # 3. Exploratory Data Analysis (EDA)
 EDA was performed to understand relationships between features and ratings.
@@ -146,6 +162,7 @@ Mobile-App-Rating-Prediction
 │
 ├── data/
 │   └── google_play_store_dataset.csv
+|   └── cleaned_googleplaystoredataset.csv
 │
 └── README.md
 ```
